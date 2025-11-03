@@ -1,0 +1,92 @@
+{
+  "project": {
+    "project_id": "PROBA.2025.TEST",
+    "customer_id": "CUSTOMER001",
+    "assets": [
+      {
+        "customer_asset_id": "PlotA1",
+        "asset_name": "Test Plot A1",
+        "plot_size": 100,
+        "plot_size_unit": "ha",
+        "customer_soil_code": "S",
+        "periods": [
+          {
+            "period_year": 2025,
+            "period_sequence": 1,
+            "estimated": {
+              "customer_crop_code": "CROP",
+              "crop_yield": 10,
+              "crop_yield_unit": "t_ha",
+              "baseline_inputs": [
+                { "customer_input_code": "FERT_A", "rate": 160, "unit": "kg_n_ha" },
+                { "customer_input_code": "FERT_B", "rate": 475, "unit": "kg_ha" },
+                { "customer_input_code": "FERT_C", "rate": 150, "unit": "kg_ha" },
+                { "customer_input_code": "DIESEL", "rate": 145, "unit": "l_ha" }
+              ],
+              "project_inputs": [
+                { "customer_input_code": "FERT_A", "rate": 160, "unit": "kg_n_ha", "inhibitor": "INH_01", "inhibitor_rate": 2, "inhibitor_unit": "l_ha" },
+                { "customer_input_code": "ALT_FERT_B", "rate": 475, "unit": "kg_ha" },
+                { "customer_input_code": "ALT_FERT_C", "rate": 150, "unit": "kg_ha" },
+                { "customer_input_code": "HVO100", "rate": 145, "unit": "l_ha" }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "customer_asset_id": "PlotB1",
+        "asset_name": "Test Barley Field",
+        "plot_size": 50,
+        "plot_size_unit": "ha",
+        "customer_soil_code": "1",
+        "periods": [
+          {
+            "period_year": 2025,
+            "period_sequence": 1,
+            "estimated": {
+              "customer_crop_code": "BARLEY",
+              "crop_yield": 7.5,
+              "crop_yield_unit": "t_ha",
+              "baseline_inputs": [
+                { "customer_input_code": "FERT_X", "rate": 375, "unit": "kg_ha" },
+                { "customer_input_code": "DIESEL", "rate": 113, "unit": "l_ha" }
+              ],
+              "project_inputs": [
+                { "customer_input_code": "ALT_FERT_X", "rate": 375, "unit": "kg_ha" },
+                { "customer_input_code": "HVO100", "rate": 113, "unit": "l_ha" }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "customer_asset_id": "PlotC1",
+        "asset_name": "Test Potato Field",
+        "plot_size": 80,
+        "plot_size_unit": "ha",
+        "customer_soil_code": "7",
+        "periods": [
+          {
+            "period_year": 2025,
+            "period_sequence": 1,
+            "estimated": {
+              "customer_crop_code": "POTATO",
+              "crop_yield": 50,
+              "crop_yield_unit": "t_ha",
+              "baseline_inputs": [
+                { "customer_input_code": "FERT_Y", "rate": 500, "unit": "kg_ha" },
+                { "customer_input_code": "FERT_N", "rate": 166.7, "unit": "kg_ha" },
+                { "customer_input_code": "DIESEL", "rate": 262, "unit": "l_ha" }
+              ],
+              "project_inputs": [
+                { "customer_input_code": "FERT_Y", "rate": 500, "unit": "kg_ha" },
+                { "customer_input_code": "FERT_N", "rate": 166.7, "unit": "kg_ha", "inhibitor": "INH_02", "inhibitor_rate": 2, "inhibitor_unit": "l_ha" },
+                { "customer_input_code": "HVO100", "rate": 262, "unit": "l_ha" }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+  }
+}
