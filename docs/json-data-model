@@ -1,0 +1,25 @@
+| Field                 | Description                                                               | Type    | Example             | Created / Provided by     |
+| --------------------- | ------------------------------------------------------------------------- | ------- | ------------------- | ------------------------- |
+| `project_id`          | Unique identifier for the project assigned within the Proba system.       | string  | `"PROBA.2025.TEST"` | **Proba**                 |
+| `customer_id`         | Unique identifier for the customer or partner organization.               | string  | `"CUSTOMER001"`     | **Proba**                 |
+| `assets`              | List of farm or plot-level assets included in the project.                | array   | `[ {...}, {...} ]`  | **Customer**              |
+| `customer_asset_id`   | Unique ID for the asset or plot within the customer’s system.             | string  | `"PlotA1"`          | **Customer**              |
+| `asset_name`          | Descriptive name of the plot or field.                                    | string  | `"Test Plot A1"`    | **Customer**              |
+| `plot_size`           | Area of the asset.                                                        | number  | `100`               | **Customer**              |
+| `plot_size_unit`      | Unit for `plot_size`.                                                     | string  | `"ha"`              | **Customer**              |
+| `customer_soil_code`  | Soil classification code used by the customer.                            | string  | `"S"`               | **Customer**              |
+| `periods`             | List of annual or seasonal reporting periods for the asset.               | array   | `[ {...} ]`         | **Customer**              |
+| `period_year`         | Year of the reporting period.                                             | integer | `2025`              | **Customer**              |
+| `period_sequence`     | Sequence number if multiple reporting periods occur within the same year. | integer | `1`                 | **Customer**              |
+| `estimated`           | Object containing estimated crop yields and inputs before realization.    | object  | `{...}`             | **Customer**              |
+| `customer_crop_code`  | Customer or Proba crop identifier (e.g., wheat, barley, potato).          | string  | `"CROP"`            | **Customer / Proba**      |
+| `crop_yield`          | Expected or realized yield of the crop.                                   | number  | `10`                | **Customer**              |
+| `crop_yield_unit`     | Unit for crop yield.                                                      | string  | `"t_ha"`            | **Proba (defined unit)**  |
+| `baseline_inputs`     | List of input materials used under baseline conditions.                   | array   | `[ {...} ]`         | **Customer**              |
+| `project_inputs`      | List of input materials used under project (improved) conditions.         | array   | `[ {...} ]`         | **Customer**              |
+| `customer_input_code` | Identifier of the input product (fertilizer, fuel, etc.).                 | string  | `"FERT_A"`          | **Customer**              |
+| `rate`                | Application rate of the input per hectare.                                | number  | `160`               | **Customer**              |
+| `unit`                | Unit of measure for `rate`.                                               | string  | `"kg_n_ha"`         | **Proba (unit standard)** |
+| `inhibitor`           | Code of the inhibitor or additive used (if applicable).                   | string  | `"INH_01"`          | **Customer**              |
+| `inhibitor_rate`      | Application rate of the inhibitor or additive.                            | number  | `2`                 | **Customer**              |
+| `inhibitor_unit`      | Unit for inhibitor application rate.                                      | string  | `"l_ha"`            | **Proba (unit standard)** |
